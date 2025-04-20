@@ -44,13 +44,13 @@ export default function Settings() {
   };
 
   return (
-    <div className="relative h-full w-full bg-gray-900 p-2">
-      <div className="flex items-center space-x-2">
+    <div className="relative h-full w-full bg-gray-900 ">
+      <div className="flex items-center space-x-2 p-3">
         <Cog6ToothIcon className="w-6 h-6 text-white" />
         <h1 className="text-2xl font-bold text-white my-6">Settings</h1>
       </div>
 
-      <div className="h-[calc(100%-4rem)] overflow-y-auto">
+      <div className="h-8/12 overflow-y-auto px-3">
         <div className="space-y-6 pb-20">
           {settingsGroups.map((group) => (
             <div key={group.title} className="space-y-2">

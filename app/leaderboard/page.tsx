@@ -15,7 +15,7 @@ const leaderboardData = [
 
 export default function Leaderboard() {
   return (
-    <div className="relative h-full w-full bg-gray-900 p-2">
+    <div className="relative h-full w-full bg-gray-900 p-3">
       <h1 className="text-2xl font-bold text-white my-6">Leaderboard</h1>
       
       <div className="space-y-4">

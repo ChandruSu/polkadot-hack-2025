@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { XMarkIcon, CheckIcon } from '@heroicons/react/24/outline';
 
@@ -11,7 +11,7 @@ export default function Camera() {
   const [isCaptured, setIsCaptured] = useState(false);
   const [capturedImage, setCapturedImage] = useState<string | null>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       startCamera();
     }
@@ -71,18 +71,17 @@ export default function Camera() {
   return (
     <div className="relative h-full w-full bg-black">
       {/* Close Button */}
-      <button
+      <button className="absolute top-5 right-3 z-10 p-1 rounded-full bg-gray-900/30"
         onClick={() => {
           stopCamera();
           router.back();
         }}
-        className="absolute top-5 right-4 z-10 text-white p-2 rounded-full bg-gray-900/50"
       >
         <XMarkIcon className="w-6 h-6" />
       </button>
 
       {/* Camera Preview */}
-      <div className="relative h-full">
+      <div className="relative h-full w-full">
         {!isCaptured ? (
           <>
             <video
@@ -110,7 +109,7 @@ export default function Camera() {
               onClick={capture}
               className="w-16 h-16 rounded-full border-4 border-white flex items-center justify-center"
             >
-              <div className="w-14 h-14 rounded-full bg-white" />
+              <div className="w-13 h-13 rounded-full bg-white" />
             </button>
           ) : (
             <>

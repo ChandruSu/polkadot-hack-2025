@@ -65,7 +65,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative h-full w-full bg-gray-900 p-2">
+    <div className="relative h-full w-full bg-gray-900 p-3">
       <h1 className="text-2xl font-bold text-white my-6">Crumbs</h1>
 
       {/* Map Container */}
@@ -84,7 +84,7 @@ export default function Home() {
 
       {/* Active Challenge Banner */}
       {activeChallenge && (
-        <div className="absolute top-20 left-2 right-2 bg-green-600/90 backdrop-blur-sm p-4 rounded-lg shadow-lg">
+        <div className="absolute top-21 left-5 right-5 bg-green-600/70 backdrop-blur-sm p-4 rounded-lg shadow-lg">
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-white font-bold">Following directions to:</h3>
@@ -95,7 +95,7 @@ export default function Home() {
                 setActiveChallenge(null);
                 setShowNearby(true);
               }}
-              className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors"
+              className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition-colors"
             >
               Cancel
             </button>

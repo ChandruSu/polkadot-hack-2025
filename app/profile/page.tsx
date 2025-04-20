@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Profile() {
   return (
-    <div className="relative h-full w-full bg-gray-900 p-2">
+    <div className="relative h-full w-full bg-gray-900 p-3">
       <h1 className="text-2xl font-bold text-white my-6">Profile</h1>
       <div className="space-y-6">
         <div className="flex items-center space-x-4">
