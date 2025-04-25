@@ -21,3 +21,5 @@ Developed on the moonbeam alpha test net (a parachain of Polkadot) to build main
 
 ![Demo Image](./demo/demo.png)
 
+![Demo Video](https://github.com/user-attachments/assets/edb96c4a-1038-49d9-a503-c97bd2520185)
+
